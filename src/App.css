@@ -1,0 +1,114 @@
+body {
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: 'Inter', -apple-system, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #60a5fa;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.quick-topics {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.quick-topics button {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.quick-topics button:hover {
+  background: #334155;
+  border-color: #60a5fa;
+}
+
+.input-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  resize: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.send-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.send-btn:hover {
+  background: #1d4ed8;
+}
+
+.response-card {
+  margin-top: 30px;
+  background: #020617;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease;
+}
+
+.card-header {
+  background: #1e293b;
+  padding: 12px 20px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.card-body {
+  padding: 20px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
